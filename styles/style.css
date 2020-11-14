@@ -1,0 +1,212 @@
+@font-face {
+  font-family: "shrikhand", "roboto";
+  src: url("fonts/Shrikhand-Regular.otf");
+  src: url("fonts/Roboto-Regular.ttf"); }
+/* COULEURS */
+/* POLICES */
+/* box-shadow */
+.exploration-title, .exploration-subtitle, .exploration-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+
+.btn-navigation_step-1, .btn-navigation_step-2, .btn-navigation_step-3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row; }
+
+.btn-navigation_step-1, .btn-navigation_step-2, .btn-navigation_step-3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row; }
+
+.pink-btn {
+  background: linear-gradient(#EE74DA, #9356DC);
+  width: 200px;
+  height: 50px;
+  border-radius: 24px;
+  border: none;
+  color: white;
+  box-shadow: 0px 8px 16px -13px #7d7d7d;
+  outline: none; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+a {
+  text-decoration: none; }
+
+body {
+  margin: 0;
+  width: auto;
+  font-family: "roboto"; }
+
+header {
+  height: 100%;
+  width: 100%; }
+
+.logo {
+  font-family: "shrikhand";
+  font-size: 1.5em;
+  text-align: center;
+  padding-top: 9px;
+  margin-bottom: 3px;
+  font-weight: 100;
+  box-shadow: 0px 0px 8px 0px #7d7d7d; }
+
+.locality {
+  text-align: center;
+  height: 100%;
+  font-family: "roboto";
+  font-weight: 1000;
+  padding: 10px 0;
+  background-color: #eaeaea; }
+
+.exploration {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 50px;
+  background-color: #f6f6f6; }
+  .exploration h2, .exploration h3 {
+    margin: 0 20px;
+    font-weight: 1000; }
+
+.exploration-title {
+  padding: 33px 0 10px 0; }
+
+.exploration-subtitle {
+  font-size: 0.8rem;
+  margin-bottom: 30px; }
+
+.btn-navigation_step-1 {
+  background-color: #f6f6f6;
+  height: 66px;
+  box-shadow: 0px 8px 16px -13px #7d7d7d;
+  border-radius: 18px;
+  padding: 0 10px;
+  margin: 10px 0;
+  font-weight: bold;
+  font-size: 0.9em;
+  color: black; }
+  .btn-navigation_step-1:hover {
+    background-color: #F5EDFF;
+    transition: 0.25s; }
+
+.btn-navigation_step-2 {
+  background-color: #f6f6f6;
+  height: 66px;
+  box-shadow: 0px 8px 16px -13px #7d7d7d;
+  border-radius: 18px;
+  padding: 0 10px;
+  margin: 10px 0;
+  font-weight: bold;
+  font-size: 0.9em;
+  color: black; }
+  .btn-navigation_step-2:hover {
+    background-color: #F5EDFF;
+    transition: 0.25s; }
+
+.btn-navigation_step-3 {
+  background-color: #f6f6f6;
+  height: 66px;
+  box-shadow: 0px 8px 16px -13px #7d7d7d;
+  border-radius: 18px;
+  padding: 0 10px;
+  margin: 10px 0;
+  font-weight: bold;
+  font-size: 0.9em;
+  color: black; }
+  .btn-navigation_step-3:hover {
+    background-color: #F5EDFF;
+    transition: 0.25s; }
+
+.steps {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding: 0 10px;
+  margin: 10px 14px; }
+
+.card-bloc {
+  background-color: #f6f6f6;
+  height: 100%;
+  padding-bottom: 50px; }
+
+.restaurant-card {
+  background-color: black;
+  height: 150px;
+  margin: 20px 24px;
+  border-radius: 19px; }
+
+.restaurant-card-1 {
+  height: 252px;
+  background-color: white;
+  margin: 20px 24px;
+  border-radius: 19px;
+  overflow: hidden; }
+  .restaurant-card-1 img {
+    object-fit: cover;
+    object-position: bottom;
+    width: 100%;
+    height: 70%; }
+
+.restaurant-card-2 {
+  height: 252px;
+  background-color: white;
+  margin: 20px 24px;
+  border-radius: 19px;
+  overflow: hidden; }
+  .restaurant-card-2 img {
+    object-fit: cover;
+    object-position: bottom;
+    width: 100%;
+    height: 70%; }
+
+.restaurant-card-3 {
+  height: 252px;
+  background-color: white;
+  margin: 20px 24px;
+  border-radius: 19px;
+  overflow: hidden; }
+  .restaurant-card-3 img {
+    object-fit: cover;
+    object-position: bottom;
+    width: 100%;
+    height: 70%; }
+
+.restaurant-card-4 {
+  height: 252px;
+  background-color: white;
+  margin: 20px 24px;
+  border-radius: 19px;
+  overflow: hidden; }
+  .restaurant-card-4 img {
+    object-fit: cover;
+    object-position: bottom;
+    width: 100%;
+    height: 70%; }
+
+.restaurant-name {
+  font-size: 1.4em;
+  line-height: 25px;
+  padding: 9px 0 0 14px; }
+
+footer {
+  background-color: #353535;
+  color: white;
+  padding: 20px; }
+  footer ul {
+    list-style-type: none; }
+    footer ul li {
+      margin-top: 10px; }
+  footer h1 {
+    font-size: 1.3em;
+    font-family: "shrikhand";
+    font-weight: 400; }
+
+/*# sourceMappingURL=style.css.map */
