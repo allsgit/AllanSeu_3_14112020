@@ -19,6 +19,11 @@
     flex-direction: row;
 }
 
+%align-center{
+    display: flex;
+    align-items: center;
+}
+
 
 %pink-button{
     background: linear-gradient(#EE74DA, #9356DC);
@@ -29,5 +34,18 @@
     color: white;
     box-shadow: $shadow-button;
     outline: none;
+}
+
+%menu-container{
+    background-color: $color-backlightgrey;
+    height: 66px;
+    box-shadow: $shadow-button;
+    border-radius: 18px;
+    padding: 0 10px;
+    margin: 20px 12px;
+    @extend %flex-between-row;
+    font-weight: bold;
+    font-size: 0.9em;
+    color: black;
 }
 
