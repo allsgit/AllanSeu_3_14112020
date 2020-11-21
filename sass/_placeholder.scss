@@ -1,9 +1,13 @@
+/* FLEX POSITIONNING */
+
 %flex-center-column {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
+
+
 
 %flex-between-row {
     display: flex;
@@ -24,6 +28,7 @@
     align-items: center;
 }
 
+/* BUTTON */
 
 %pink-button{
     background: linear-gradient(#EE74DA, #9356DC);
