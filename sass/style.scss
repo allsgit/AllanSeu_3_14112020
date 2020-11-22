@@ -200,7 +200,7 @@ footer{
     img{
         object-fit: cover;
         height: auto;
-        width: 10%;
+        width: 100%;
     
     }
 
@@ -238,18 +238,53 @@ footer{
         @extend %menu-container;
         display: flex;
         flex-direction: column;
-        flex-wrap: nowrap;
-        animation: apparition 1s ease-out;  
+        flex-wrap: nowrap;    
     }
 
-    @keyframes apparition{
-        from{
+    .entrée-1, .entrée-2, .entrée-3, .plat-1,.plat-2, .plat-3, .dessert-1, .dessert-2, .dessert-3{
+        animation: fadeIn 0.60s ease-out both;
+        opacity: 0; 
+    }
+
+    .entrée-1{
+        animation-delay: 0.25s;
+    }
+    .entrée-2{
+        animation-delay: 0.35s;
+    }
+    .entrée-3{
+        animation-delay: 0.45s;
+    }
+
+    .plat-1{
+        animation-delay: 0.55s;
+    }
+    .plat-2{
+        animation-delay: 0.65s;
+    }
+    .plat-3{
+        animation-delay: 0.75s;
+    }
+
+    .dessert-1{
+        animation-delay: 0.85s;
+    }
+    .dessert-2{
+        animation-delay: 0.95s;
+    }
+    .dessert-3{
+        animation-delay: 1.05s;
+    }
+  
+
+    @keyframes fadeIn {
+        from {
             opacity: 0;
-            transform: translateY(-40px);
+            transform: translate3d(0, +15%, 0);
         }
-        to{
+        to {
             opacity: 1;
-            transform: translateY(0);
+            transform: translate3d(0, 0, 0);
         }
     }
        
