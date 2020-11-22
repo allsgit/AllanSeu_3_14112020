@@ -200,7 +200,7 @@ footer{
     img{
         object-fit: cover;
         height: auto;
-        width: 100%;
+        width: 10%;
     
     }
 
@@ -235,14 +235,26 @@ footer{
 /* vignette des menus */
 @for $i from 1 through 3 {
     .entrée-#{$i},.plat-#{$i}, .dessert-#{$i} {
-       @extend %menu-container;
+        @extend %menu-container;
         display: flex;
         flex-direction: column;
-        &:hover{
-            background-color: red; /* hover sur les signette à voir */
-            
+        flex-wrap: nowrap;
+        animation: apparition 1s ease-out;  
+    }
+
+    @keyframes apparition{
+        from{
+            opacity: 0;
+            transform: translateY(-40px);
+        }
+        to{
+            opacity: 1;
+            transform: translateY(0);
         }
     }
+       
+    
+
 
 
        
