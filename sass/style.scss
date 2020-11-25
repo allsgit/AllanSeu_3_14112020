@@ -37,11 +37,18 @@ header{
     margin-bottom: 3px;
     font-weight: 100;
     box-shadow: 0px 0px 8px 0px #7d7d7d;
+    display: block;
     
     
 }
 
-.locality{
+.input-area{
+    color: $color-backgrey;
+    width: 100%;
+    height: auto;
+}
+
+.input-locality{
     
     
     text-align: center;
@@ -50,8 +57,15 @@ header{
     font-weight: 1000;
     padding: 10px 0;
     background-color: $color-backgrey;
+    border: none;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    outline: none;
 
 }
+
+
 
 .exploration{
     width: 100%;
@@ -59,12 +73,20 @@ header{
     padding-bottom: 50px;
     background-color: $color-backlightgrey;
     z-index: 3;
+    text-align: center;
     
     
-        h2, h3{
-            margin: 0 20px;
+        h2, h3, {
+            margin: 15px 0 20px 0;
             font-weight: 1000;
+            padding: 0 77px;
+            margin-bottom: 10px;
             }
+
+        p{
+            padding: 0 18px;
+            margin-bottom: 40px;
+        }
 
 }
 
@@ -101,6 +123,7 @@ header{
         font-weight: bold;
         font-size: 0.9em;
         color: black;
+        border: none;
             &:hover{
                 background-color: #F5EDFF;
                 transition: 0.25s;
@@ -109,9 +132,6 @@ header{
                 margin: 0 30px;
                 
             }
-        
-
-
     }
 }
 
@@ -233,7 +253,7 @@ footer{
 
 
 /* vignette des menus */
-@for $i from 1 through 3 {
+@for $i from 1 through 4 {
     .entrée-#{$i},.plat-#{$i}, .dessert-#{$i} {
         @extend %menu-container;
         display: flex;
@@ -241,7 +261,9 @@ footer{
         flex-wrap: nowrap;    
     }
 
-    .entrée-1, .entrée-2, .entrée-3, .plat-1,.plat-2, .plat-3, .dessert-1, .dessert-2, .dessert-3{
+    .entrée-1,
+    .entrée-2,
+    .entrée-3, .entrée-4, .plat-1,.plat-2, .plat-3, .dessert-1, .dessert-2, .dessert-3{
         animation: fadeIn 0.60s ease-out both;
         opacity: 0; 
     }
@@ -254,6 +276,10 @@ footer{
     }
     .entrée-3{
         animation-delay: 0.45s;
+    }
+
+    .entrée-4{
+        animation-delay: 0.50s;
     }
 
     .plat-1{
