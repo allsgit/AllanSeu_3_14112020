@@ -17,7 +17,7 @@ a{
 
 
 body{
-    z-index: 100000;
+    z-index: 100;
     margin: 0;
     width: auto;
     font-family: "roboto";
@@ -31,7 +31,7 @@ header{
 
 .logo{
     font-family: "shrikhand";
-    font-size: 1.5em;
+    font-size: 0.9em;
     text-align: center;
     padding-top: 9px;
     margin-bottom: 3px;
@@ -186,7 +186,8 @@ footer{
     background-color: #353535;
     color: white;
     padding: 20px;
-    z-index: 100;
+    z-index: 10000;
+    position: relative;
     
 
     
@@ -234,13 +235,13 @@ footer{
     position: relative;
     
     
-    top: -92px;
+    top: -107px;
     width: 100%;
     height: 100%;
     
         h3{
             font-family: $brandname-font;
-            margin: 23px 0 0 15px;
+            padding: 23px 0 0 15px;
             
         }
         h5{
@@ -254,41 +255,48 @@ footer{
 
 /* vignette des menus */
 @for $i from 1 through 4 {
-    .entrée-#{$i},.plat-#{$i}, .dessert-#{$i} {
+    .starter-#{$i},.main_course-#{$i}, .dessert-#{$i} {
         @extend %menu-container;
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;    
     }
 
-    .entrée-1,
-    .entrée-2,
-    .entrée-3, .entrée-4, .plat-1,.plat-2, .plat-3, .dessert-1, .dessert-2, .dessert-3{
+    .starter-1,
+    .starter-2,
+    .starter-3, 
+    .starter-4, 
+    .main_course-1,
+    .main_course-2, 
+    .main_course-3, 
+    .dessert-1, 
+    .dessert-2, 
+    .dessert-3{
         animation: fadeIn 0.60s ease-out both;
         opacity: 0; 
     }
 
-    .entrée-1{
+    .starter-1{
         animation-delay: 0.25s;
     }
-    .entrée-2{
+    .starter-2{
         animation-delay: 0.35s;
     }
-    .entrée-3{
+    .starter-3{
         animation-delay: 0.45s;
     }
 
-    .entrée-4{
+    .starter-4{
         animation-delay: 0.50s;
     }
 
-    .plat-1{
+    .main_course-1{
         animation-delay: 0.55s;
     }
-    .plat-2{
+    .main_course-2{
         animation-delay: 0.65s;
     }
-    .plat-3{
+    .main_course-3{
         animation-delay: 0.75s;
     }
 
@@ -313,15 +321,10 @@ footer{
             transform: translate3d(0, 0, 0);
         }
     }
-       
-    
-
-
-
-       
+         
 }
 
-.entrées-container, .plats-container, .dessert-container {
+.starter-container, .main_course-container, .dessert-container {
     margin-bottom: 50px;
 }
 
