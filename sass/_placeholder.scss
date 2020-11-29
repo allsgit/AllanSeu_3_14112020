@@ -25,6 +25,13 @@
 
 %align-center{
     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+%align-center-between{
+    display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -41,6 +48,9 @@
     outline: none;
     display: block;
     margin: 0 auto;
+    cursor: pointer;
+
+    
 }
 
 %menu-container{

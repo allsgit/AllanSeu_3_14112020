@@ -11,8 +11,9 @@
     padding: 0;
 }
 
-a{
+a,h1 {
     text-decoration: none;
+    color: black;
 }
 
 
@@ -26,6 +27,7 @@ body{
 header{
     height: 100%;
     width: 100%;
+    background-color: $color-backgrey;
     
 }
 
@@ -34,12 +36,23 @@ header{
     font-size: 0.9em;
     text-align: center;
     padding-top: 9px;
+    padding-bottom: 5px;
     margin-bottom: 3px;
     font-weight: 100;
-    box-shadow: 0px 0px 8px 0px #7d7d7d;
     display: block;
-    
-    
+    margin: 0 20px;
+}
+
+.logo-container{
+    display: flex;
+    justify-content: center;
+    margin-right: 20px;
+        a{
+            display: flex;
+            padding-right: 43px;
+            align-items: center;
+        }
+
 }
 
 .input-area{
@@ -51,19 +64,33 @@ header{
 .input-locality{
     
     
-    text-align: center;
+    
     height:100%;
     font-family: $texte-font;
     font-weight: 1000;
     padding: 10px 0;
     background-color: $color-backgrey;
     border: none;
-    width: 100%;
-    display: block;
-    margin: 0 auto;
+    width: 50%;
+    margin: 0 15px;
+    padding-left: 10px;
     outline: none;
 
 }
+
+.searchbox{
+    background-color: $color-backgrey;
+    display: block;
+    margin: 10px auto 9px auto;
+    align-items: center;
+    width: 180Px;
+
+        .fas{
+            padding-left: 10px;
+        }
+}
+
+
 
 
 
@@ -77,9 +104,9 @@ header{
     
     
         h2, h3, {
-            margin: 15px 0 20px 0;
+            margin: 0 0 20px 0;
             font-weight: 1000;
-            padding: 0 77px;
+            padding: 28px 77px 0 77px;
             margin-bottom: 10px;
             }
 
@@ -135,6 +162,18 @@ header{
     }
 }
 
+.new-icon{
+        color: black;
+        font-size: 19px;
+        padding: 1px 10px;
+        background-color: #99E2D0;
+        position: absolute;
+        /* top: auto; */
+        right: 34Px;
+        top: 718px;
+
+}
+
 .steps{
     display: flex;
     flex-direction: column;
@@ -163,22 +202,39 @@ header{
     .restaurant-card-#{$i} {
     height: 252px;
     background-color: white;
-    margin: $mobile-margin;
     border-radius: 19px;
     overflow: hidden;
+    box-shadow: $shadow-button;
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    grid-template-rows: 70% 30%;
+    width: 90%;
+    margin: 25px auto 0 auto;
         img {
+            grid-column-start: 1;
+            grid-column-end: 4;
+            grid-row-start: 1;
+            grid-row-end: 2;
             object-fit: cover;
             object-position: bottom;
             width: 100%;
-            height: 70%;
+            height: 100%;
             }
+        .far{
+            grid-row-start: 2;
+            margin: 28px 0 0 67px;
+        }
     }
 }
 
 .restaurant-name{
-    font-size: 1.4em;
+    margin-top: 10px;
     line-height: 25px;
-    padding: 9px 0 0 14px;
+    padding: 3px 0 0 14px;
+    grid-column-start: 1;
+    grid-row-start: 2;
+    grid-column-end: 3;
 }
 
 footer{
@@ -214,17 +270,27 @@ footer{
     height: 100%;
     
 }
-/* menu français*/
+/* menu*/
 
-.menu-banner{
+header img{
     overflow: hidden;
-    img{
-        object-fit: cover;
-        height: auto;
-        width: 100%;
-    
-    }
+    object-fit: cover;
+    height: auto;
+    width: 100%;
+}
 
+.main-menu-header{
+    @extend %align-center-between;
+        .far{
+            margin-right: 20px;
+        }
+}
+.hr-title{
+width: 10%;
+margin: 5px 0 0 19px;
+height: 3px;
+background-color: $tertiaire;
+border: none;
 }
 
 .main-menu{
@@ -235,21 +301,30 @@ footer{
     position: relative;
     
     
-    top: -107px;
+    top: -48px;
     width: 100%;
     height: 100%;
     
-        h3{
+        h1{
             font-family: $brandname-font;
             padding: 23px 0 0 15px;
+            margin-bottom: 20px;
+            font-size: 1.2em;
             
         }
-        h5{
-            margin: 23px 0 0 15px;
-            border-bottom: 3px solid $tertiaire;
-
+        h3{
+            margin-left: 18px;
         }
+    
 
+}
+
+.title-underline{
+    border-bottom: 3px solid $tertiaire;
+}
+
+.item-title{
+    font-size: 1.2em;
 }
 
 
@@ -324,7 +399,7 @@ footer{
          
 }
 
-.starter-container, .main_course-container, .dessert-container {
+.starter-section, .main_course-section, .dessert-section {
     margin-bottom: 50px;
 }
 

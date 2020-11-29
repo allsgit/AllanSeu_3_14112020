@@ -12,7 +12,13 @@
     <body>
         <header>
             <a href="index.html" class="logo"><h1>Ohmyfood</h1></a>
-            <input class="input-locality" placeholder="Paris Lyon"type="text">
+            <form class="searchbox">
+                <i class="fas fa-map-marker-alt"></i>
+                <input class="input-locality" placeholder="Paris, Belleville"type="text">
+            </form>  
+            
+
+
 
             <div class="exploration">
                 <h2>Réserver le menu qui vous convient</h2>
@@ -23,9 +29,9 @@
             </div>
         </header>
 <!--NAVIGATION-->
-        <nav>
+        
             <div class="steps">
-                <h3>Fonctionnement</h3>
+                <h2>Fonctionnement</h2>
                 <button class="btn-navigation_step-1">
                     <i class="fas fa-mobile-alt fa-lg"></i>
                     Choisissez un restaurant
@@ -41,20 +47,24 @@
                     Dégustez au restaurant
                 </button>
             </div>
-        </nav>
+        
 <!--MENU BLOC-->
-        <main>
-            <div class="card-bloc">
-                <a href="menu_one">
-                    <div class="restaurant-card-1">
-                        <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Assiète blanche garnis de salade et de saumon posée sur une table en bois">
-                        <div class="restaurant-name">
-                            <h5>La palette du goût</h5>
-                            <h6>Ménilmontant</h6>
-                        </div>
+        <main class="card-bloc">
+
+            
+                <a href="menu_one.html" class="restaurant-card-1">
+                    
+                    <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Assiète blanche garnis de salade et de saumon posée sur une table en bois">
+                    <span class="new-icon">Nouveau</span>
+                    <div class="restaurant-name">
+                        <h3>La palette du goût</h3>
+                        <h4>Ménilmontant</h4>
+                        
                     </div>
+                    <i class="far fa-heart far fa-lg"></i>
+                    
                 </a>
-                <a href="menu_two">
+                <a href="menu_two.html">
                     <div class="restaurant-card-2">
                         <img src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="">
                         <div class="restaurant-name">
@@ -74,7 +84,7 @@
                     </div>
                 </a>
 
-                <a href="menu_four">
+                <a href="menu_four.html">
                     <div class="restaurant-card-4">
                         <img src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="">
                         <div class="restaurant-name">
@@ -83,7 +93,7 @@
                         </div>
                     </div>
                 </a>
-           </div>
+           
         </main>
             
 <!--Footer bloc-->
