@@ -49,6 +49,11 @@
     display: block;
     margin: 0 auto;
     cursor: pointer;
+        &:hover{
+            transition: all 0.5s ease-out;
+            background: linear-gradient(#ee75da, #9559df);
+            box-shadow: 0px 12px 15px -4px #7d7d7d;;
+        }
 
     
 }
