@@ -22,8 +22,10 @@ body{
     margin: 0;
     width: auto;
     font-family: "roboto";
-    
 }
+
+    
+
 header{
     height: 100%;
     width: 100%;
@@ -40,7 +42,7 @@ header{
     margin-bottom: 3px;
     font-weight: 100;
     display: block;
-    margin: 0 20px;
+    background-color: $color-backlightgrey;
 }
 
 .logo-container{
@@ -65,29 +67,28 @@ header{
     
     
     
-    height:100%;
-    font-family: $texte-font;
+    height: 100%;
+    font-family: "roboto";
     font-weight: 1000;
-    padding: 10px 0;
-    background-color: $color-backgrey;
+    padding: 12px 0;
+    background-color: #eaeaea;
     border: none;
-    width: 55%;
-    margin: 0 15px;
-    padding-left: 10px;
+    /* margin: 0 15px; */
+    /* padding-left: 10px; */
     outline: none;
 
 }
 
 .searchbox{
-    background-color: $color-backgrey;
+    background-color: #eaeaea;
     display: block;
-    margin: 10px auto 9px auto;
-    align-items: center;
-    width: 180Px;
+    text-align: center;
+    box-shadow: 0px 7px 9px 0px;
     
 
         .fas{
-            padding-left: 10px;
+            padding-left: 39px;
+            margin-right: 10px;
         }
 }
 
@@ -102,6 +103,7 @@ header{
     background-color: $color-backlightgrey;
     z-index: 3;
     text-align: center;
+    
     
     
         h2, h3,{
@@ -177,7 +179,7 @@ header{
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    left: 0px;
+                    left: -10px;
                 }
             
                 
@@ -227,7 +229,7 @@ header{
     box-shadow: $shadow-button;
     margin-top: 25px;
     display: grid;
-    grid-template-columns: 33.33% 33.33% 33.33%;
+    grid-template-columns: repeat(3,1fr);
     grid-template-rows: 70% 30%;
     width: 90%;
     margin: 25px auto 0 auto;
@@ -424,7 +426,7 @@ border: none;
 
 
 
-
+out
 
 
 
@@ -509,27 +511,26 @@ border: none;
 .first{
     width: 100px;
     height: 100px;
-    position: relative;
-    top: -101px;
+    /* top: 0; */
+    position: absolute;
     align-items: center;
     border-radius: 50%;
-    border: 10px solid #99E2D0;
-    border-left: none;
-    border-top: none;
+    border: 10px solid #FF79DA;
     border-bottom: none;
+    border-right: none;
+    border-top: none;
     transform: rotate(0deg);
     animation: rot2 5s ease-in-out infinite;
-
 }
 
 .second{
     width: 100px;
     height: 100px;
-    top: 101px;
-    position: relative;
+    /* top: 0; */
+    position: absolute;
     align-items: center;
     border-radius: 50%;
-    border: 10px solid rgb(124, 11, 253);
+    border: 10px solid #7c0bfd;
     border-left: none;
     border-right: none;
     border-bottom: none;
@@ -541,10 +542,11 @@ border: none;
 .third{
     width: 100px;
     height: 100px;
-    position: relative;
+    /* top: 0; */
+    position: absolute;
     align-items: center;
     border-radius: 50%;
-    border: 10px solid #FF79DA ;
+    border: 10px solid #FF79DA;
     border-bottom: none;
     border-right: none;
     border-top: none;
@@ -556,11 +558,11 @@ border: none;
 .fourth{
     width: 100px;
     height: 100px;
-    position: relative;
-    top: -201px;
+    position: absolute;
+    /* top: -201px; */
     align-items: center;
     border-radius: 50%;
-    border:10px solid #f2f2F2;
+    border: 10px solid #f2f2F2;
     border-left: none;
     border-right: none;
     border-top: none;
@@ -625,18 +627,72 @@ border: none;
 .spinner-loader{
     position: relative;
     display: block;
-    width: 118Px;
+    top: 50%;
+    height: 100px;
+    transform: translate(0, -50px);
     margin: 0 auto;
-    align-items: center;
+    width: 100px;
+    animation-name: fadeowt;
+    animation-delay: 3s;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
 }
 
 .loader-body{
-    height: 100%;
-    width: 100%;
+    height: 100vh;
+    width: 100vw;
+    z-index: 99999;
     position: absolute;
-    z-index: 100;
-    background-color: white;
-    transition: fadeout 3s ease-in-out;
+    display: none;
+    
+    
 }
 
+
+
+@keyframes fadeowt{
+    0%{
+        opacity: 1;
+    }
+
+     to{
+         opacity: 0;
+         display: none;
+     }
+}
+
+@media screen and (min-width: 560px) and (max-width: 1024px){
+
+    .steps{
+        flex-wrap: wrap;
+        flex-direction: row;
+            h2{
+                width: 100%;
+                margin-right: 51px;
+            }
+    }
+
+    .card-bloc{
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    @for $i from 1 through 4 {
+        .restaurant-card-#{$i}{
+            width: 48%;
+            margin: 5px;
+        }
+        
+
+    }
+    @for $i from 1 through 3 {
+        .btn-navigation_step-#{$i} {
+            width: 30%;
+            justify-content: start;
+            padding: 0 36px 0 0;
+            
+        }
+    }
+}
 
