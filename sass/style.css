@@ -95,7 +95,8 @@ header {
   .logo-container a {
     display: flex;
     padding-right: 43px;
-    align-items: center; }
+    align-items: center;
+    background-color: #eaeaea; }
 
 .input-area {
   color: #eaeaea;
@@ -536,7 +537,6 @@ header img {
     background-clip: content-box;
     background-image: red; }
 
-out
 .starter-1,
 .starter-2,
 .starter-3,
@@ -598,7 +598,6 @@ out
     background-clip: content-box;
     background-image: red; }
 
-out
 .starter-1,
 .starter-2,
 .starter-3,
@@ -660,7 +659,6 @@ out
     background-clip: content-box;
     background-image: red; }
 
-out
 .starter-1,
 .starter-2,
 .starter-3,
@@ -722,7 +720,6 @@ out
     background-clip: content-box;
     background-image: red; }
 
-out
 .starter-1,
 .starter-2,
 .starter-3,
@@ -892,7 +889,99 @@ out
   to {
     opacity: 0;
     display: none; } }
+@media screen and (min-width: 1025px) {
+  header img {
+    height: 300px; }
+
+  .main-menu-header {
+    justify-content: center; }
+    .main-menu-header h1 {
+      margin-right: 10px;
+      transform: translate(23px, 0px); }
+    .main-menu-header .far {
+      margin-left: 29px; }
+
+  .main-menu {
+    text-align: center;
+    display: block;
+    margin-left: 0 auto; }
+
+  .steps {
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 50%; }
+    .steps h2 {
+      width: 100%;
+      text-align: center; }
+
+  .wrapper {
+    display: flex;
+    height: 100%; }
+
+  .card-bloc {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    /* margin: 40px 0 0 0; */
+    padding: 95px 0 10px 0;
+    flex-wrap: wrap;
+    background-color: white; }
+
+  .restaurant-card-1 {
+    width: 45%;
+    margin: 5px; }
+
+  .restaurant-card-2 {
+    width: 45%;
+    margin: 5px; }
+
+  .restaurant-card-3 {
+    width: 45%;
+    margin: 5px; }
+
+  .restaurant-card-4 {
+    width: 45%;
+    margin: 5px; }
+
+  .btn-navigation_step-1 {
+    width: 100%;
+    justify-content: center;
+    padding: 0 36px 0 0;
+    margin-left: 30px; }
+
+  .btn-navigation_step-2 {
+    width: 100%;
+    justify-content: center;
+    padding: 0 36px 0 0;
+    margin-left: 30px; }
+
+  .btn-navigation_step-3 {
+    width: 100%;
+    justify-content: center;
+    padding: 0 36px 0 0;
+    margin-left: 30px; }
+
+  .starter-section, .main_course-section, .dessert-section {
+    width: 70%;
+    margin: 0 auto; } }
 @media screen and (min-width: 560px) and (max-width: 1024px) {
+  header img {
+    height: 300px; }
+
+  .main-menu-header {
+    justify-content: center; }
+    .main-menu-header h1 {
+      margin-right: 10px;
+      transform: translate(23px, 0px); }
+    .main-menu-header .far {
+      margin-left: 29px; }
+
+  .main-menu {
+    text-align: center;
+    display: block;
+    margin-left: 0 auto; }
+
   .steps {
     flex-wrap: wrap;
     flex-direction: row; }
@@ -935,6 +1024,10 @@ out
   .btn-navigation_step-3 {
     width: 30%;
     justify-content: start;
-    padding: 0 36px 0 0; } }
+    padding: 0 36px 0 0; }
+
+  .starter-section, .main_course-section, .dessert-section {
+    width: 70%;
+    margin: 0 auto; } }
 
 /*# sourceMappingURL=style.css.map */
