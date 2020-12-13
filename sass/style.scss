@@ -15,14 +15,33 @@ a,h1 {
     text-decoration: none;
     color: black;
 }
+/*
+.blur-container{
 
+    overflow: hidden;
+    animation-name: fadeblur;
+    animation-delay: 3.2s;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+    filter: blur(8px);
 
+}
+@keyframes fadeblur{
+ 
+    100%{
+        filter: blur(0);
+    }
+    
+}
+*/
 body{
-    z-index: 100;
     margin: 0;
     width: auto;
     font-family: "roboto";
+
 }
+
+
 
     
 
@@ -254,17 +273,15 @@ header{
             grid-row-start: 2;
             padding: 28px 0 0 67px;
             font-weight: 100;
-            transition: font-weight 400ms ease-in-out;
+            transition: font-weight 1sec ease-in;
             will-change: font-weight;
             cursor: pointer;
             color: $primary ;
-                &:hover{
-                    font-weight: 1000;
-                }
-
-            
-        }
-       
+            &:hover{
+                /* hover coeur */
+            }
+           
+        } 
         
     }
 }
@@ -400,9 +417,6 @@ border: none;
     border-bottom: 3px solid $tertiaire;
 }
 
-.item-title{
-    font-size: 1.2em;
-}
 
 
 /* vignette des menus */
@@ -410,21 +424,79 @@ border: none;
     .starter-#{$i},.main_course-#{$i}, .dessert-#{$i} {
         @extend %menu-container;
         display: flex;
-        flex-direction: column;
+        justify-content: space-between;
         flex-wrap: nowrap; 
-        transition-duration: 0.5s ;
-        transition-property: padding-right; 
-            
+        padding: 0;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
         &:hover{
-            padding-right: 20%;
-            
-            background-clip: content-box;
-            background-image: red;
-            
+            .circle, .price-checkblock{
+                animation: slide 0.8s forwards;
+                display: flex;
+                    .fas{
+                        animation: arotate 0.6s forwards;
+                    }
+            }
+              
         }  
     }
+    .item-title{
+        font-size: 1.2em;
+    }
+    
+    .item-price-p{
+        margin: 0 auto;
+    }
+    .price-checkblock{
+        flex-direction: row;
+        align-items: center;
+        height: 100%;
+        flex-direction: row-reverse;
+        display: flex;  
 
+    }
+    
+    @keyframes arotate{
+        0%{
+            transform: rotate(0deg);
+            
+        }
+        100%{
+            transform: rotate(360deg);
+            
+        }
+       
 
+    }
+    @keyframes slide {
+        from{
+            width: 0%;
+           
+            
+        }
+        to{
+            
+            width: 60%;
+        }
+
+        0%{
+            
+        }
+        
+    }
+
+    .circle{
+        height: 100%;
+        background-color: $tertiaire;
+        align-items: center;
+        justify-content: center;
+        border-radius: 0 18px 18px 0;
+        display: none;
+        color: white;
+        cursor: pointer;
+    }
 
 
     .starter-1,
@@ -498,17 +570,27 @@ border: none;
    margin: 15px 0 -14px 0;
 }
 
-.item-subtitle, .item-title{
+.item-subtitle{
     display: flex;
-    justify-content: space-between;
-    width:100%;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+
+        h4, p{
+            text-overflow: ellipsis;
+            
+            
+        }
 }
+
+
 
 
 .first{
     width: 100px;
     height: 100px;
-    /* top: 0; */
     position: absolute;
     align-items: center;
     border-radius: 50%;
@@ -622,6 +704,7 @@ border: none;
 }
 
 .spinner-loader{
+    z-index: 999999;
     position: relative;
     display: block;
     top: 50%;
@@ -636,11 +719,18 @@ border: none;
 }
 
 .loader-body{
+    filter: blur(0);
     height: 100vh;
     width: 100vw;
-    z-index: 99999;
+    z-index: 2;
+    z-index: 1000000;
     position: absolute;
-    display: none;
+    animation-name: fadeowt;
+    animation-delay: 3.1s;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+    display: block;
+
     
     
 }
@@ -648,14 +738,9 @@ border: none;
 
 
 @keyframes fadeowt{
-    0%{
-        opacity: 1;
+    100%{
+        visibility: hidden;
     }
-
-     to{
-         opacity: 0;
-         display: none;
-     }
 }
 
 
@@ -663,6 +748,9 @@ border: none;
 
 
 @media screen and (min-width: 1025px){
+    body{
+        overflow-x: hidden;
+    }
 
     header img{
         height: 300px;
