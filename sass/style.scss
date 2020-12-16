@@ -340,6 +340,7 @@ header img{
     object-fit: cover;
     height: auto;
     width: 100%;
+    height: 300px;
 }
 
 .main-menu-header{
@@ -502,27 +503,27 @@ border: none;
     }
 
     .starter-4{
-        animation-delay: 0.50s;
+        animation-delay: 0.55s;
     }
 
     .main_course-1{
-        animation-delay: 0.55s;
-    }
-    .main_course-2{
         animation-delay: 0.65s;
     }
-    .main_course-3{
+    .main_course-2{
         animation-delay: 0.75s;
+    }
+    .main_course-3{
+        animation-delay: 0.85s;
     }
 
     .dessert-1{
-        animation-delay: 0.85s;
-    }
-    .dessert-2{
         animation-delay: 0.95s;
     }
-    .dessert-3{
+    .dessert-2{
         animation-delay: 1.05s;
+    }
+    .dessert-3{
+        animation-delay: 1.15s;
     }
   
     @keyframes fadeIn {
@@ -554,7 +555,7 @@ border: none;
     flex-direction: column;
     align-items: flex-start;
     padding-left: 10px;
-    width: 70%;
+    width: 73%;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
