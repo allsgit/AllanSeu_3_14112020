@@ -117,7 +117,7 @@ header {
 .input-locality {
   height: 100%;
   font-family: "roboto";
-  font-weight: 1000;
+  font-weight: 900;
   padding: 12px 0;
   background-color: #eaeaea;
   border: none;
@@ -273,7 +273,7 @@ header {
   .steps h2 {
     margin: 30px 0 20px 0; }
 
-.card-bloc {
+main {
   background-color: #f6f6f6;
   height: 100%;
   padding-bottom: 50px; }
@@ -311,19 +311,16 @@ header {
     font-weight: 400;
     opacity: 0.8; }
   .restaurant-card-1 .far {
-    width: 0;
-    height: 0;
     grid-row-start: 2;
-    padding: 28px 0 0 67px;
+    margin: 28px 0 0 67px;
     font-weight: 100;
     cursor: pointer;
-    color: #9356DC;
-    transition: 1s; }
-    .restaurant-card-1 .far:hover {
-      color: red;
-      /* hover coeur */ }
-  .restaurant-card-1 .far::after {
-    background-color: red; }
+    transition: 1s ease-in-out; }
+  .restaurant-card-1 i.far.fa-heart.far.fa-lg {
+    transition: 1s ease-in-out; }
+  .restaurant-card-1 i.far.fa-heart.far.fa-lg:hover {
+    font-family: 'fontawesome';
+    color: #9356DC; }
 
 .restaurant-card-2 {
   height: 252px;
@@ -351,19 +348,16 @@ header {
     font-weight: 400;
     opacity: 0.8; }
   .restaurant-card-2 .far {
-    width: 0;
-    height: 0;
     grid-row-start: 2;
-    padding: 28px 0 0 67px;
+    margin: 28px 0 0 67px;
     font-weight: 100;
     cursor: pointer;
-    color: #9356DC;
-    transition: 1s; }
-    .restaurant-card-2 .far:hover {
-      color: red;
-      /* hover coeur */ }
-  .restaurant-card-2 .far::after {
-    background-color: red; }
+    transition: 1s ease-in-out; }
+  .restaurant-card-2 i.far.fa-heart.far.fa-lg {
+    transition: 1s ease-in-out; }
+  .restaurant-card-2 i.far.fa-heart.far.fa-lg:hover {
+    font-family: 'fontawesome';
+    color: #9356DC; }
 
 .restaurant-card-3 {
   height: 252px;
@@ -391,19 +385,16 @@ header {
     font-weight: 400;
     opacity: 0.8; }
   .restaurant-card-3 .far {
-    width: 0;
-    height: 0;
     grid-row-start: 2;
-    padding: 28px 0 0 67px;
+    margin: 28px 0 0 67px;
     font-weight: 100;
     cursor: pointer;
-    color: #9356DC;
-    transition: 1s; }
-    .restaurant-card-3 .far:hover {
-      color: red;
-      /* hover coeur */ }
-  .restaurant-card-3 .far::after {
-    background-color: red; }
+    transition: 1s ease-in-out; }
+  .restaurant-card-3 i.far.fa-heart.far.fa-lg {
+    transition: 1s ease-in-out; }
+  .restaurant-card-3 i.far.fa-heart.far.fa-lg:hover {
+    font-family: 'fontawesome';
+    color: #9356DC; }
 
 .restaurant-card-4 {
   height: 252px;
@@ -431,19 +422,16 @@ header {
     font-weight: 400;
     opacity: 0.8; }
   .restaurant-card-4 .far {
-    width: 0;
-    height: 0;
     grid-row-start: 2;
-    padding: 28px 0 0 67px;
+    margin: 28px 0 0 67px;
     font-weight: 100;
     cursor: pointer;
-    color: #9356DC;
-    transition: 1s; }
-    .restaurant-card-4 .far:hover {
-      color: red;
-      /* hover coeur */ }
-  .restaurant-card-4 .far::after {
-    background-color: red; }
+    transition: 1s ease-in-out; }
+  .restaurant-card-4 i.far.fa-heart.far.fa-lg {
+    transition: 1s ease-in-out; }
+  .restaurant-card-4 i.far.fa-heart.far.fa-lg:hover {
+    font-family: 'fontawesome';
+    color: #9356DC; }
 
 /* post-it nouveauté - restaurant */
 .restaurant-card-1 .new-icon {
@@ -1148,7 +1136,7 @@ header img {
   .main-menu {
     text-align: center;
     display: block;
-    margin-left: 0 auto; }
+    margin: 0 auto; }
 
   .steps {
     flex-wrap: wrap;
@@ -1162,7 +1150,7 @@ header img {
     display: flex;
     height: 100%; }
 
-  .card-bloc {
+  main {
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -1225,7 +1213,7 @@ header img {
   .main-menu {
     text-align: center;
     display: block;
-    margin-left: 0 auto; }
+    margin: 0 auto; }
 
   .steps {
     flex-wrap: wrap;
@@ -1234,7 +1222,7 @@ header img {
       width: 100%;
       margin-right: 51px; }
 
-  .card-bloc {
+  main {
     display: flex;
     flex-direction: row;
     justify-content: space-between;

@@ -86,7 +86,7 @@ header{
     
     height: 100%;
     font-family: "roboto";
-    font-weight: 1000;
+    font-weight: 900;
     padding: 12px 0;
     background-color: #eaeaea;
     border: none;
@@ -205,7 +205,7 @@ header{
         } 
 }
 
-.card-bloc{
+main{
     background-color: $color-backlightgrey;
     height: 100%;
     padding-bottom: 50px;
@@ -247,27 +247,32 @@ header{
             font-weight: 400;
             opacity: 0.8;
         }
+
+
         .far{
-            width: 0;
-            height: 0;
             grid-row-start: 2;
-            padding: 28px 0 0 67px;
+            margin: 28px 0 0 67px;
             font-weight: 100;
             cursor: pointer;
-            color: $primary ;
-            transition: 1s;
-            &:hover{
-                color: red;
-                /* hover coeur */
-            }
-           
-        } 
-        .far::after{
-            background-color: red;
+            transition: 1s ease-in-out;
+        }    
+
+        i.far.fa-heart.far.fa-lg{
+            transition: 1s ease-in-out;
         }
         
+        i.far.fa-heart.far.fa-lg:hover {
+            font-family: 'fontawesome';
+            color: $primary;  //its pink
+            }
+    
+        }
+
+     
     }
-}
+    
+    
+
 /* post-it nouveauté - restaurant */
 @for $i from 1 through 2{
     .restaurant-card-#{$i}{ 
@@ -748,7 +753,7 @@ border: none;
     .main-menu{
         text-align: center;
         display: block;
-        margin-left: 0 auto;
+        margin: 0 auto;
     }
 
     .steps{
@@ -768,7 +773,7 @@ border: none;
 
     }
 
-    .card-bloc{
+    main{
         display: flex;
         flex-direction: row;
         width: 100%;
@@ -825,7 +830,7 @@ border: none;
     .main-menu{
         text-align: center;
         display: block;
-        margin-left: 0 auto;
+        margin: 0 auto;
     }
 
     .steps{
@@ -837,7 +842,7 @@ border: none;
             }
     }
 
-    .card-bloc{
+    main{
         display:flex;
         flex-direction: row;
         justify-content: space-between;
