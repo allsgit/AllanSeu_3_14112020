@@ -297,7 +297,18 @@ main {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 70% 30%;
   width: 90%;
-  margin: 25px auto 0 auto; }
+  margin: 25px auto 0 auto;
+  /*
+          i.far.fa-heart.far.fa-lg {
+              color: #9356DC;
+              transition: 1s;
+              } 
+  
+          i.far.fa-heart.far.fa-lg:hover {
+              font-family: 'fontawesome';
+              color: yellow;
+              }
+      */ }
   .restaurant-card-1 img {
     grid-column-start: 1;
     grid-column-end: 4;
@@ -310,17 +321,32 @@ main {
   .restaurant-card-1 h4 {
     font-weight: 400;
     opacity: 0.8; }
+  .restaurant-card-1 .fas {
+    position: absolute;
+    padding: 5px;
+    width: 50PX;
+    right: 20px;
+    bottom: 19px;
+    background: -webkit-linear-gradient(#9356dc, #ff79da);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 0;
+    transition: 1s ease-in-out;
+    text-align: center; }
+    .restaurant-card-1 .fas:hover {
+      cursor: pointer;
+      transform: scale(1.01);
+      opacity: 1;
+      background: -webkit-linear-gradient(#9356dc, #ff79da);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent; }
   .restaurant-card-1 .far {
-    grid-row-start: 2;
+    position: absolute;
+    right: 39px;
+    bottom: 24px;
     margin: 28px 0 0 67px;
     font-weight: 100;
-    cursor: pointer;
-    transition: 1s ease-in-out; }
-  .restaurant-card-1 i.far.fa-heart.far.fa-lg {
-    transition: 1s ease-in-out; }
-  .restaurant-card-1 i.far.fa-heart.far.fa-lg:hover {
-    font-family: 'fontawesome';
-    color: #9356DC; }
+    cursor: pointer; }
 
 .restaurant-card-2 {
   height: 252px;
@@ -334,7 +360,18 @@ main {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 70% 30%;
   width: 90%;
-  margin: 25px auto 0 auto; }
+  margin: 25px auto 0 auto;
+  /*
+          i.far.fa-heart.far.fa-lg {
+              color: #9356DC;
+              transition: 1s;
+              } 
+  
+          i.far.fa-heart.far.fa-lg:hover {
+              font-family: 'fontawesome';
+              color: yellow;
+              }
+      */ }
   .restaurant-card-2 img {
     grid-column-start: 1;
     grid-column-end: 4;
@@ -347,17 +384,32 @@ main {
   .restaurant-card-2 h4 {
     font-weight: 400;
     opacity: 0.8; }
+  .restaurant-card-2 .fas {
+    position: absolute;
+    padding: 5px;
+    width: 50PX;
+    right: 20px;
+    bottom: 19px;
+    background: -webkit-linear-gradient(#9356dc, #ff79da);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 0;
+    transition: 1s ease-in-out;
+    text-align: center; }
+    .restaurant-card-2 .fas:hover {
+      cursor: pointer;
+      transform: scale(1.01);
+      opacity: 1;
+      background: -webkit-linear-gradient(#9356dc, #ff79da);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent; }
   .restaurant-card-2 .far {
-    grid-row-start: 2;
+    position: absolute;
+    right: 39px;
+    bottom: 24px;
     margin: 28px 0 0 67px;
     font-weight: 100;
-    cursor: pointer;
-    transition: 1s ease-in-out; }
-  .restaurant-card-2 i.far.fa-heart.far.fa-lg {
-    transition: 1s ease-in-out; }
-  .restaurant-card-2 i.far.fa-heart.far.fa-lg:hover {
-    font-family: 'fontawesome';
-    color: #9356DC; }
+    cursor: pointer; }
 
 .restaurant-card-3 {
   height: 252px;
@@ -371,7 +423,18 @@ main {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 70% 30%;
   width: 90%;
-  margin: 25px auto 0 auto; }
+  margin: 25px auto 0 auto;
+  /*
+          i.far.fa-heart.far.fa-lg {
+              color: #9356DC;
+              transition: 1s;
+              } 
+  
+          i.far.fa-heart.far.fa-lg:hover {
+              font-family: 'fontawesome';
+              color: yellow;
+              }
+      */ }
   .restaurant-card-3 img {
     grid-column-start: 1;
     grid-column-end: 4;
@@ -384,17 +447,32 @@ main {
   .restaurant-card-3 h4 {
     font-weight: 400;
     opacity: 0.8; }
+  .restaurant-card-3 .fas {
+    position: absolute;
+    padding: 5px;
+    width: 50PX;
+    right: 20px;
+    bottom: 19px;
+    background: -webkit-linear-gradient(#9356dc, #ff79da);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 0;
+    transition: 1s ease-in-out;
+    text-align: center; }
+    .restaurant-card-3 .fas:hover {
+      cursor: pointer;
+      transform: scale(1.01);
+      opacity: 1;
+      background: -webkit-linear-gradient(#9356dc, #ff79da);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent; }
   .restaurant-card-3 .far {
-    grid-row-start: 2;
+    position: absolute;
+    right: 39px;
+    bottom: 24px;
     margin: 28px 0 0 67px;
     font-weight: 100;
-    cursor: pointer;
-    transition: 1s ease-in-out; }
-  .restaurant-card-3 i.far.fa-heart.far.fa-lg {
-    transition: 1s ease-in-out; }
-  .restaurant-card-3 i.far.fa-heart.far.fa-lg:hover {
-    font-family: 'fontawesome';
-    color: #9356DC; }
+    cursor: pointer; }
 
 .restaurant-card-4 {
   height: 252px;
@@ -408,7 +486,18 @@ main {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 70% 30%;
   width: 90%;
-  margin: 25px auto 0 auto; }
+  margin: 25px auto 0 auto;
+  /*
+          i.far.fa-heart.far.fa-lg {
+              color: #9356DC;
+              transition: 1s;
+              } 
+  
+          i.far.fa-heart.far.fa-lg:hover {
+              font-family: 'fontawesome';
+              color: yellow;
+              }
+      */ }
   .restaurant-card-4 img {
     grid-column-start: 1;
     grid-column-end: 4;
@@ -421,17 +510,32 @@ main {
   .restaurant-card-4 h4 {
     font-weight: 400;
     opacity: 0.8; }
+  .restaurant-card-4 .fas {
+    position: absolute;
+    padding: 5px;
+    width: 50PX;
+    right: 20px;
+    bottom: 19px;
+    background: -webkit-linear-gradient(#9356dc, #ff79da);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 0;
+    transition: 1s ease-in-out;
+    text-align: center; }
+    .restaurant-card-4 .fas:hover {
+      cursor: pointer;
+      transform: scale(1.01);
+      opacity: 1;
+      background: -webkit-linear-gradient(#9356dc, #ff79da);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent; }
   .restaurant-card-4 .far {
-    grid-row-start: 2;
+    position: absolute;
+    right: 39px;
+    bottom: 24px;
     margin: 28px 0 0 67px;
     font-weight: 100;
-    cursor: pointer;
-    transition: 1s ease-in-out; }
-  .restaurant-card-4 i.far.fa-heart.far.fa-lg {
-    transition: 1s ease-in-out; }
-  .restaurant-card-4 i.far.fa-heart.far.fa-lg:hover {
-    font-family: 'fontawesome';
-    color: #9356DC; }
+    cursor: pointer; }
 
 /* post-it nouveauté - restaurant */
 .restaurant-card-1 .new-icon {

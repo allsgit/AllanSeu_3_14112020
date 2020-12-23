@@ -249,23 +249,48 @@ main{
         }
 
 
+
+        .fas{
+            position: absolute;
+            padding: 5px;
+            width: 50PX;
+            right: 20px;
+            bottom: 19px;
+            background: -webkit-linear-gradient(#9356dc, #ff79da);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            opacity: 0;
+            transition: 1s ease-in-out;
+            text-align: center;
+                &:hover{
+                    cursor: pointer;
+                    transform: scale(1.01);
+                    opacity: 1;
+                    background: -webkit-linear-gradient(#9356dc, #ff79da);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
+        } 
         .far{
-            grid-row-start: 2;
+            position: absolute;
+            right: 39px;
+            bottom: 24px;
             margin: 28px 0 0 67px;
             font-weight: 100;
             cursor: pointer;
-            transition: 1s ease-in-out;
-        }    
+            
+        }       
+/*
+        i.far.fa-heart.far.fa-lg {
+            color: #9356DC;
+            transition: 1s;
+            } 
 
-        i.far.fa-heart.far.fa-lg{
-            transition: 1s ease-in-out;
-        }
-        
         i.far.fa-heart.far.fa-lg:hover {
             font-family: 'fontawesome';
-            color: $primary;  //its pink
+            color: yellow;
             }
-    
+    */
         }
 
      
